@@ -57,6 +57,7 @@
     width: 100%;
     background: var(--navbar-bg);
     text-align: right;
+    visibility:hidden;
 }
 
 .navbar button {
