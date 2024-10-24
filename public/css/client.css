@@ -242,6 +242,7 @@ body {
     margin-left: var(--btns-margin-left);
     width: var(--btns-width);
     flex-direction: var(--btns-flex-direction);
+    visibility:hidden;
 
     justify-content: center;
     grid-gap: 0.5rem;
