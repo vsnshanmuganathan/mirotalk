@@ -3,7 +3,7 @@
     <head>
         <!-- Title and Icon -->
 
-        <title id="clientTitle">Video calling WebRTC Video call, Chat Room & Screen Sharing.</title>
+        <title id="clientTitle">MiroTalk WebRTC Video call, Chat Room & Screen Sharing.</title>
         <link id="icon" rel="shortcut icon" href="../images/logo.svg" />
         <link id="appleTouchIcon" rel="apple-touch-icon" href="../images/logo.svg" />
 
@@ -89,7 +89,7 @@ access to use this app.
         <!-- init user devices -->
 
         <div id="initUser" class="init-user hidden">
-            <!-- <p>Please allow the camera & microphone access to continue this meeting.</p> -->
+            <!-- <p>Please allow the camera & microphone access to use this app.</p> -->
             <div id="initVideoContainer" class="init-video-container">
                 <video
                     id="initVideo"
@@ -114,6 +114,24 @@ access to use this app.
         <!-- Add emoji to username -->
 
         <div id="usernameEmoji" class="usernameEmoji fadein center hidden"></div>
+
+        <!-- Start buttons bar https://fontawesome.com/icons?d=gallery -->
+
+        <div id="buttonsBar" class="fadein">
+            <button id="shareRoomBtn" class="fas fa-share-alt"></button>
+            <button id="recordStreamBtn" class="fas fa-record-vinyl"></button>
+            <button id="fullScreenBtn" class="fas fa-expand-alt"></button>
+            <button id="chatRoomBtn" class="fas fa-comment"></button>
+            <button id="captionBtn" class="fas fa-closed-captioning"></button>
+            <button id="roomEmojiPickerBtn" class="fas fa-face-smile"></button>
+            <button id="whiteboardBtn" class="fas fa-chalkboard-teacher"></button>
+            <button id="snapshotRoomBtn" class="fas fas fa-camera-retro"></button>
+            <button id="fileShareBtn" class="fas fa-folder-open"></button>
+            <button id="documentPiPBtn" class="fas fa-images"></button>
+            <button id="mySettingsBtn" class="fas fa-cogs"></button>
+            <button id="aboutBtn" class="fas fa-question"></button>
+        </div>
+        <!-- End left buttons -->
 
         <!-- Start bottom buttons -->
         <div id="bottomButtons" class="fadein">
@@ -809,6 +827,12 @@ access to use this app.
                             <i class="fa-solid fa-up-down-left-right"></i>
                             <p>Buttons bar</p>
                         </div>
+                        <br />
+                        <select id="mainButtonsBarPosition">
+                            <option value="vertical">Vertical</option>
+                            <option value="horizontal">Horizontal</option>
+                        </select>
+                        <br />
                         <div id="pinUnpinGridDiv">
                             <div class="title">
                                 <i class="fa-solid fa-map-pin"></i>
